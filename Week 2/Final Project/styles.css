@@ -303,9 +303,102 @@ form {
    
   
    
-  
+}
+
+
+
+/* QUALITY */
+
+.quality--work {
+    margin-bottom: 100px;
+}
+
+
+
+.btn:hover {
+    cursor:pointer;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.quality__img {
+    width: 100%;
+    max-height: 1200px;
+}
+
+.quality__left {
+    padding-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+
     
    
-   
+}
+
+.quality__left h1 {
+    font-size: 48px;
+    padding-bottom: 25px;
+
+}
+
+.quality__info {
+    margin-bottom: 25px;
+}
+
+
+
+.quality__right {
+    width: 50%;
+    margin-top: 40px;
+
+}
+
+.quality__left .btn {
+    max-width: 150px;
+}
+
+/* steps */
+
+.steps__left {
+    padding-top: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+
     
+   
+}
+
+.steps__right {
+    width: 50%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.steps--list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.steps--list-item h1 {
+    font-size: 32px;
+}
+
+.steps--info-wrapper {
+    display: flex;
+    flex-direction: column;
 }
