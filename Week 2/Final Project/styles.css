@@ -274,8 +274,6 @@ form {
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .feature__desc {
@@ -290,8 +288,7 @@ form {
     margin-right: 20px;
     border: 1px solid grey;
     border-radius: 9999px;
-    margin-bottom: 40px;
-  
+    margin-bottom: 40px; 
 
 }
 
