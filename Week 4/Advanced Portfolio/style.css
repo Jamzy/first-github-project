@@ -671,6 +671,10 @@ width = 80vw
 /* Small phones, tablets, large smart phones */
 
 @media (max-width: 768px) {
+    .shape {
+        visibility: hidden;
+    }
+
     .tilte {
         font-size: 80px;
     }
@@ -697,6 +701,11 @@ width = 80vw
 /* Small phones */
 
 @media (max-width: 480px) {
+
+    .shape {
+        visibility: hidden;
+    }
+
     .title {
         font-size: 52px;
     }
