@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* NAV */
+
+.placeholder--text {
+    text-align: center;
+    z-index: 100;
+}
+
+.hero {
+    position: relative; 
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {    
+      content: "";
+      background-image: url('./assets/newyork3.jpg');
+      background-position: 20%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+}
+
+
+nav {
+    position: relative;
+    margin-bottom: 100px;
+    color: black;
+    margin-top: 50px;
+  
+}
+.nav--logo {
+    width: 90px;
+    height: 75px;
+    
+}
+
+.nav__links {
+    width: 50%;
+    
+}
+
+.img--wrapper {
+    width: 50%;
+}
+
+
+nav {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+}
+
+.nav__link {
+    display: inline-block;
+    white-space:nowrap;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    font-weight: 600;
+    
+}
+ 
+nav li {
+    margin-left: 50px;
+}
+
+
+
+form {
+  
+     /* This bit sets up the horizontal layout */
+     display:flex;
+     flex-direction:row;
+     
+     /* This bit draws the box around it */
+     
+     
+     /* I've used padding so you can see the edges of the elements. */
+    padding:11px;
+    border-radius: 100px;
+   }
+   
+   input {
+     /* Tell the input to use all the available space */
+     flex-grow:2;
+     /* And hide the input's outline, so the form looks like the outline */
+     border:none;
+     padding: 20px;
+     font-size: large;
+   }
+   
+   input:focus {
+     /* removing the input focus blue box. Put this on the form if you like. */
+     outline: none;
+   }
+
+   .landing--img {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    
+   }
+
+   /* PHOTO RESULTS */
+   .row__films {
+    max-width: 1100px;
+   }
+
+   .films--list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   }
