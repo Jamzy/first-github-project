@@ -4,7 +4,7 @@ async function main(event) {
     const search = event.target.value
     const films = await fetch (`http://www.omdbapi.com/?i=tt3896198&apikey=411ac4a7&s=${search}`)
     const filmsData = await films.json()
-    filmListEl.innerHTML = filmsData.Search.slice(0, 6).map(film => filmHTML(film)).join('')
+    filmListEl.innerHTML = filmsData.Search.slice(0, 9).map(film => filmHTML(film)).join('')
 
 }
 

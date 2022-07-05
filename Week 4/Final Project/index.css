@@ -142,4 +142,12 @@ form {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
    }
+
+   .film--card {
+    width: 33%;
+    margin-top: 25px;
+   }
+   
