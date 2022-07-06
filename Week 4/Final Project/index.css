@@ -150,4 +150,30 @@ form {
     width: 33%;
     margin-top: 25px;
    }
+
+   /* spinner */
    
+   
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .spinner__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    
+  }
