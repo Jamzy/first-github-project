@@ -177,3 +177,22 @@ form {
     width: 100%;
     
   }
+
+  .films--loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .films--loading--spinner {
+    color: #144067;
+    margin-top: 100px;
+    font-size: 60px;
+    display: none !important;
+  }
+  
+  .films--loading .films--loading--spinner {
+    display: block !important;
+  }
+  
