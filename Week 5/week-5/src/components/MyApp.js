@@ -1,21 +1,19 @@
 import React from "react";
+import Joke from "./jokes";
+import './style.css';
+
 
 function MyApp() {
-    return (
-        <div className="main--content">
-          
-                <input type="checkbox" />
-            <p>This is placeholder text</p>
-                <input type="checkbox" />
-            <p>This is placeholder text</p>
-                <input type="checkbox" />
-            <p>This is placeholder text</p>
-            
-           
+   
+
+  return (
+    
+    <div className="todo--list">
+        <Joke question="" punchLine="A spelling bee."/>
+        <Joke question="What’s more amazing than a talking dog?" punchLine="A spelling bee."/>
         
-            
-        </div>
-    );
+    </div>
+  )
 }
 
-export default MyApp
+export default MyApp;
