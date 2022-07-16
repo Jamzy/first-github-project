@@ -1,33 +1,32 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import bookcover from "../assets/book-1.jpeg";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import Rating from "./Rating";
+import Price from "./Price";
 
-const Book = () => {
-    return (
-        <div className="book">
-              <a href="">
-                <figure className="book__img--wrapper">
-                  <img src={bookcover} alt="" className="book__img" />
-                </figure>
-              </a>
-              <div className="book__title">
-                <a href="/" className="book__title--link">
-                  Atomic Habits
-                </a>
-              </div>
-              <div className="book__ratings">
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star" />
-                <FontAwesomeIcon icon="star-half-alt" />
-              </div>
-              <div className="book__price">
-                <span className="book__price--normal">$15.00</span>
-                $10.00
-              </div>
-            </div>
-    );
-}
+const Book = ({ book }) => {
+  
+  return (
+    <div className="book">
+      <Link to="/books/1">
+        <figure className="book__img--wrapper">
+          <img
+            src={book.url}
+            alt=""
+            className="book__img"
+          />
+        </figure>
+      </Link>
+      <div className="book__title">
+        <Link to="/books/1" className="book__title--link">
+          {book.title}
+        </Link>
+      </div>
+      <Rating rating={book.rating}/>
+      <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
+      
+    </div>
+  );
+};
 
 export default Book;
