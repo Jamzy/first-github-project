@@ -14,7 +14,34 @@ function App() {
   const [cart, setCart] = useState([]);
 
   function addToCart(book) {
-    setCart([...cart, book])
+    setCart([...cart, { ...book, quantity: 1 }]);
+    
+  }
+
+  function changeQuantity(book, quantity) {
+    setCart(cart.map(item => {
+      if (item.id === book.id) {
+        return {
+          ...item,
+          quantity: +quantity,
+        }
+      }
+      else {
+        return item
+      }
+    }))
+  }
+
+  function numberOfItems() {
+    let counter = 0;
+    cart.forEach(item => {
+      counter += item.quantity
+    })
+    return counter;
+  }
+
+  function removeItem(item) {
+    setCart(cart.filter(book => book.id !== item.id))
     
   }
 
@@ -25,12 +52,12 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <Nav />
+      <Nav numberOfItems={numberOfItems()}/>
       <Routes>
       <Route exact path="/"  element={<Home />}/>
       <Route exact path="/books" element={<Books books={books}/>} />
       <Route path="/books/:id" element={<BookInfo books={books}  addToCart={addToCart}/>} />
-      <Route path="/cart" element={<Cart books={books} />} />
+      <Route path="/cart" element={<Cart books={books} cart={cart} changeQuantity={changeQuantity} removeItem={removeItem}/>} />
       </Routes>
       <Footer />
     </div>
